@@ -7,12 +7,12 @@ document.getElementById("order-form").addEventListener("submit", function (event
     const phonePattern = /^[0-9]{10}$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!phonePattern.test(tel)) {
+    if (!tel) {
       alert("Please enter a valid 10-digit phone number.");
       return;
     }
 
-    if (!emailPattern.test(email)) {
+    if (!email) {
       alert("Please enter a valid email address.");
       return;
     }
