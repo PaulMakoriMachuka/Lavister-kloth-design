@@ -5,7 +5,7 @@ document.getElementById("order-form").addEventListener("submit", function (event
     const email = document.getElementById("email").value.trim();
 
     const phonePattern = /^[0-9]{10}$/;
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern = /\S+@\S+\.\S+/;
 
     if (!tel) {
       alert("Please enter a valid 10-digit phone number.");
