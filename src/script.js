@@ -8,7 +8,7 @@ document.getElementById("order-form").addEventListener("submit", function (event
     const emailPattern = /\S+@\S+\.\S+/;
 
     if (!tel) {
-      alert("Please enter a valid 10-digit phone number.");
+      alert("Please enter your phone number.");
       return;
     }
 
